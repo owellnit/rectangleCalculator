@@ -9,7 +9,6 @@ public class Rectangle {
 	 * 
 	 * @param a Length of side a.
 	 * @param b Length of side b.
-	 * @param h The height of the rectangle.
 	 */
 	public Rectangle (Double a, Double b) {
 		sideA = a;
