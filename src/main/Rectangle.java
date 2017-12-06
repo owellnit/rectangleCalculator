@@ -21,6 +21,6 @@ public class Rectangle {
 	 * @return The area of the rectangle.
 	 */
 	public Double calculateArea() {
-		return sideA + sideB;
+		return sideA * sideB;
 	}
 }
