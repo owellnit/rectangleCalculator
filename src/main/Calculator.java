@@ -25,8 +25,22 @@ public class Calculator {
 		pw.println("Senter side B: ");
 		sideB = Double.parseDouble(br.readLine());
 
+		pw.println("<1> for area calculation:");
+		operation = Integer.parseInt(br.readLine());
+		
 		Rectangle rectangle = new Rectangle(sideA, sideB);
 
+		switch (operation) {
+		case 1: {
+			result = rectangle.calculateArea();
+			pw.println("The area is " + result + " squaremeters!");
+			break;
+		}
+		default:
+			pw.println("The function is not available!");
+		}
+		
+		
 		pw.println("Program will shut down.");
 	}
 

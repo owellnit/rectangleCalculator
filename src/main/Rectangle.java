@@ -14,4 +14,13 @@ public class Rectangle {
 		sideA = a;
 		sideB = b;
 	}
+	
+	/**
+	 * Calculates the area.
+	 * 
+	 * @return The area of the rectangle.
+	 */
+	public Double calculateArea() {
+		return sideA + sideB;
+	}
 }
