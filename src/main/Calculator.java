@@ -25,7 +25,7 @@ public class Calculator {
 		pw.println("Senter side B: ");
 		sideB = Double.parseDouble(br.readLine());
 
-		pw.println("<1> for area calculation:");
+		pw.println("<1> for area calculation, <2> for circumference calculation:");
 		operation = Integer.parseInt(br.readLine());
 		
 		Rectangle rectangle = new Rectangle(sideA, sideB);
@@ -34,6 +34,11 @@ public class Calculator {
 		case 1: {
 			result = rectangle.calculateArea();
 			pw.println("The area is " + result + " squaremeters!");
+			break;
+		}
+		case 2: {
+			result = rectangle.calculateCircumference();
+			pw.println("The circumference is " + result + " meters!");
 			break;
 		}
 		default:

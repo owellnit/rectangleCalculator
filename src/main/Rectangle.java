@@ -23,4 +23,13 @@ public class Rectangle {
 	public Double calculateArea() {
 		return sideA * sideB;
 	}
+	
+	/**
+	 * Calculates the circumference.
+	 * 
+	 * @return The circumference of the rectangle.
+	 */
+	public Double calculateCircumference() {
+		return 2 * (sideA + sideB);
+	}
 }
