@@ -23,4 +23,13 @@ public class Rectangle {
 	public Double calculateArea() {
 		return sideA * sideB;
 	}
+	
+	/**
+	 * Calculates the diagonal.
+	 * 
+	 * @return The diagonal of the rectangle.
+	 */
+	public Double calculateDiagonal() {
+		return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
+	}
 }
